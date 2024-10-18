@@ -1,0 +1,56 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="./i222475_Assignment2.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <h2>Weather App</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="./i222475_Table.html">Tables</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Search Bar and Profile -->
+            <div class="header">
+                <!-- City Input and Search Button -->
+                <div class="search-bar">
+                    <input type="text" id="city-input" placeholder="Enter city name">
+                    <button id="search-button">Search</button>
+                </div>
+
+                <!-- Weather Widget -->
+                <div id="weather-widget" class="weather-widget">
+                    <h2>Weather Data Based on City</h2>
+                </div>
+
+                <!-- Chart Container -->
+                <div class="charts">
+                    <div class="chart-container">
+                        <canvas id="barChart"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="doughnutChart"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="lineChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.5/dist/chart.umd.min.js"></script>
+            <script src="./i222475_Assignment2.js"></script>
+        </div>
+    </div>
+</body>
+</html>

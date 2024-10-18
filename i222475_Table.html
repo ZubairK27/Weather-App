@@ -1,0 +1,63 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App - Tables</title>
+    <link rel="stylesheet" href="./i222475_Assignment2.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <h2>Weather App</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./i222475_Assignment2.html">Dashboard</a></li>
+                    <li><a href="#">Tables</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <!-- Search Bar -->
+                <div class="search-bar">
+                    <input type="text" id="city-input" placeholder="Enter city name">
+                    <button id="search-button">Search</button>
+                </div>
+            </div>
+
+            <!-- Table for Temperature Forecast -->
+            <div id="weather-table" class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Temperature (°C)</th>
+                            <th>Weather</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                    </tbody>
+                </table>
+                <div id="pagination-controls">
+                </div>
+            </div>
+
+            <!-- Chatbot Integration -->
+            <div id="chat-container">
+                <div class="chat-bar">
+                    <input type="text" id="chat-input" placeholder="Ask me anything...">
+                    <button id="chat-button">Send</button>
+                </div>
+                <div id="chat-output">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.5/dist/chart.umd.min.js"></script>
+    <script src="./i222475_Assignment2_Table.js"></script>
+</body>
+</html>
